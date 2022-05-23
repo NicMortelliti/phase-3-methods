@@ -1,22 +1,23 @@
-# 'def' identifies this code as a method
-# Write the name of the method in snake-case
-def my_method(param)
-  puts "Running my_method"
-  
-  # Last line in the method is implicitly the return value.
-  # 'return' can be used, but commonly isn't.
-  param + 1
-
-# 'end' identifies the end of the method (like JS closing curly bracket)   
+def greet_programmer
+  puts "Hello, programmer!"
 end
 
-##################################################
-# Setting default parameter values
-##################################################
-def say_Hi(name = "Rubyist")
-  puts "Hi there, #{name}!"
+def greet name
+  puts "Hello, #{name}!"
 end
 
-say_Hi # => Hi there, Rubyist!
+def greet_with_default name = "programmer"
+  puts "Hello, #{name}!"
+end
 
-say_Hi("Nic") # => Hi there, Nic!
+def add num1, num2
+  num1 + num2
+end
+
+def halve number
+  if number.class != Integer
+    return nil
+  end
+
+  number / 2
+end
