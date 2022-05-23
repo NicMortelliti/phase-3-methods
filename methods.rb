@@ -9,3 +9,14 @@ def my_method(param)
 
 # 'end' identifies the end of the method (like JS closing curly bracket)   
 end
+
+##################################################
+# Setting default parameter values
+##################################################
+def say_Hi(name = "Rubyist")
+  puts "Hi there, #{name}!"
+end
+
+say_Hi # => Hi there, Rubyist!
+
+say_Hi("Nic") # => Hi there, Nic!
